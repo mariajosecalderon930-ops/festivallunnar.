@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TINI</title>
+<!-- ICONO DE PESTAÑA -->
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+<style>
+body{
+  font-family:Arial;
+  background:#111;
+  color:white;
+  margin:0;
+  padding:0;
+}
+
+
+
+}
+
+/* CONTENIDO PRINCIPAL */
+.artist-hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:100vh;
+  padding:100px 50px;
+}
+
+.artist-text{
+  max-width:50%;
+}
+
+.artist-text h1{
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.artist-text p{
+  font-size:20px;
+  line-height:1.5;
+}
+
+/* IMAGEN ARTISTA AGRANDADA */
+.artist-img img{
+  width:550px;   /* mayor tamaño */
+  max-width:80%;  /* ocupa más del contenedor */
+  border-radius:20px;
+}
+
+/* REDES SOCIALES */
+.artist-socials{
+  margin-top:20px;
+  font-size:18px;
+}
+
+.artist-socials a{
+  color:rgb(82,186,171);
+  text-decoration:none;
+  margin:0 10px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.artist-socials a:hover{
+  color:#fff;
+  transform:scale(1.1);
+}
+
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .artist-hero{
+    flex-direction:column-reverse;
+    justify-content:center;
+    text-align:center;
+    padding:50px 20px;
+  }
+  .artist-img img{
+    max-width:80%;
+    margin-bottom:30px;
+  }
+  .artist-text{
+    max-width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="artist-hero">
+  <div class="artist-text">
+    <h1>TINI</h1>
+    <p>Cantante colombiana reconocida por sus canciones pop.</p>
+    <p>Martina Stoessel, conocida como TINI, nació el 21 de marzo de 1997 en Buenos Aires, Argentina. Hija de Alejandro Stoessel y Mariana Muzlera, creció en un entorno artístico y estudió canto, piano, teatro y danza. Alcanzó fama internacional en 2012 como protagonista de la serie *Violetta* de Disney Channel Latinoamérica. En 2016 lanzó su carrera como solista con el álbum *TINI*, consolidando su identidad musical. Ha recibido premios como Kids’ Choice Awards Argentina, Premio Gardel y nominaciones en los MTV Millennial Awards, además de obtener discos de oro y platino por su música en Argentina y varios países europeos.</p>
+  <!-- BLOQUE DE REDES SOCIALES -->
+    <div class="artist-socials">
+      <h3>Síguelos en:</h3>
+      <a href="https://www.instagram.com/accounts/login/?next=%2Ftinistoessel%2F&source=omni_redirect" target="_blank">Instagram </a> |
+      <a href="https://x.com/TiniStoessel" target="_blank">Twitter </a> |
+      <a href="https://www.youtube.com/channel/UCJusEPcWIH9EyYSCqGP-1ew" target="_blank">YouTube </a>  |
+<a href="https://www.tiktok.com/@tinistoessel" target="_blank">tiktok</a> |
+      <a href="https://open.spotify.com/intl-es/artist/7vXDAI8JwjW531ouMGbfcp" target="_blank">Spotify 🎵</a>
+    </div>
+
+  </div>
+  <div class="artist-img">
+    <img src="https://image2url.com/r2/default/images/1773347602738-36e91ecd-5739-4a0a-8208-1f49fd3e5bcf.png" alt="TINI">
+  </div>
+</div>
+
+</body>
+</html>

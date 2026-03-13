@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tu Ticket</title>
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(255,255,255,0.2);
+}
+
+.boton {
+  padding: 15px 30px;
+  font-size: 18px;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.descargar {
+  background-color: #3cb39a;
+}
+
+.descargar:hover {
+  background-color: #3cb39a;
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+
+<h1>TU TICKET</h1>
+
+<!-- IMAGEN DEL TICKET CORRECTA -->
+<img id="ticketImage" src="https://image2url.com/r2/default/images/1773338735692-b117f463-706b-4863-a981-871a4b51374c.png" alt="Ticket">
+
+<!-- BOTÓN DESCARGAR -->
+<button class="boton descargar" onclick="downloadImage()">Descargar Ticket</button>
+
+<script>
+function downloadImage() {
+    const img = document.getElementById('ticketImage');
+    const link = document.createElement('a');
+    link.href = img.src;
+    link.download = 'tu_ticket.png';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+</script>
+
+</body>
+</html>

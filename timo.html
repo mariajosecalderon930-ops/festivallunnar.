@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>TIMØ</title>
+<!-- ICONO DE PESTAÑA -->
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+<style>
+body{
+  font-family:Arial;
+  background:#111;
+  color:white;
+  margin:0;
+  padding:0;
+}
+
+
+/* CONTENIDO PRINCIPAL */
+.artist-hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:100vh;
+  padding:100px 50px;
+}
+
+.artist-text{
+  max-width:50%;
+}
+
+.artist-text h1{
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.artist-text p{
+  font-size:20px;
+  line-height:1.5;
+}
+
+/* IMAGEN ARTISTA AGRANDADA */
+.artist-img img{
+  width:550px;   /* mayor tamaño */
+  max-width:80%  /* ocupa más del contenedor */
+  border-radius:20px;
+}
+/* REDES SOCIALES */
+.artist-socials{
+  margin-top:20px;
+  font-size:18px;
+}
+
+.artist-socials a{
+  color:rgb(82,186,171);
+  text-decoration:none;
+  margin:0 10px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.artist-socials a:hover{
+  color:#fff;
+  transform:scale(1.1);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .artist-hero{
+    flex-direction:column-reverse;
+    justify-content:center;
+    text-align:center;
+    padding:50px 20px;
+  }
+  .artist-img img{
+    max-width:80%;
+    margin-bottom:30px;
+  }
+  .artist-text{
+    max-width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="artist-hero">
+  <div class="artist-text">
+   <h1>TIMØ</h1>
+   <p>Cantantes colombianos reconocidos por sus canciones pop</p>
+   <p>TIMØ es una banda de Bogotá, Colombia, formada en 2019 por Andrés Vásquez (Andy), Alejandro Ochoa (Alejo) y Felipe Galat (Pepa), quienes se conocieron estudiando música en la Pontificia Universidad Javeriana. Su estilo combina pop latino, tropipop y ritmos colombianos, con letras sobre amor, desamor y vida cotidiana. En 2020 lanzaron su primer álbum *Estemos donde estemos*, y han colaborado con artistas como Andrés Cepeda. Con canciones populares como “Divino Castigo” y “Karma”, su música ha ganado gran presencia en streaming. En 2023 fueron nominados a los Latin Grammy y han realizado giras por Latinoamérica y Europa, consolidándose como una de las bandas emergentes más importantes del pop latino.</p>
+  
+<!-- BLOQUE DE REDES SOCIALES -->
+    <div class="artist-socials">
+      <h3>Síguelos en:</h3>
+      <a href="https://www.instagram.com/accounts/login/?next=%2Ftimo_musica%2F&source=omni_redirect" target="_blank">Instagram </a> |
+      <a href="https://x.com/timomusica" target="_blank">Twitter </a> |
+      <a href="https://www.youtube.com/@TIMO_MUSICA" target="_blank">YouTube </a>  |
+<a href"https://www.tiktok.com/@timo_musica"  target="_blank">tiktok</a> |
+      <a href="https://open.spotify.com/intl-es/artist/1KfRf4VkEYpL2G0FTWb7JX" target="_blank">Spotify 🎵</a>
+    </div>
+
+  </div>
+  <div class="artist-img">
+   <img src="https://image2url.com/r2/default/images/1773347569027-dc1ed6ce-5bd1-476d-aa71-b4c018239d9d.png" alt="TIMØ">
+  </div>
+</div>
+
+</body>
+</html>

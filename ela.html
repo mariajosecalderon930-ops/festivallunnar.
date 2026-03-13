@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Ela Taubert</title>
+<!-- ICONO DE PESTAÑA -->
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+
+<style>
+body{
+  font-family:Arial;
+  background:#111;
+  color:white;
+  margin:0;
+  padding:0;
+}
+
+
+
+/* CONTENIDO PRINCIPAL */
+.artist-hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:100vh;
+  padding:100px 50px;
+}
+
+.artist-text{
+  max-width:50%;
+}
+
+.artist-text h1{
+  font-size:60px;
+  margin-bottom:20px;
+}
+
+.artist-text p{
+  font-size:20px;
+  line-height:1.5;
+}
+
+/* IMAGEN ARTISTA AGRANDADA */
+.artist-img img{
+  width:550px;   /* mayor tamaño */
+  max-width:80%;  /* ocupa más del contenedor */
+  border-radius:20px;
+}
+/* REDES SOCIALES */
+.artist-socials{
+  margin-top:20px;
+  font-size:18px;
+}
+
+.artist-socials a{
+  color:rgb(82,186,171);
+  text-decoration:none;
+  margin:0 10px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.artist-socials a:hover{
+  color:#fff;
+  transform:scale(1.1);
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .artist-hero{
+    flex-direction:column-reverse;
+    justify-content:center;
+    text-align:center;
+    padding:50px 20px;
+  }
+  .artist-img img{
+    max-width:80%;
+    margin-bottom:30px;
+  }
+  .artist-text{
+    max-width:100%;
+  }
+}
+</style>
+</head>
+<body>
+
+
+<div class="artist-hero">
+  <div class="artist-text">
+   <h1>Ela Taubert</h1>
+
+<p>Cantante colombiana reconocida por sus canciones pop.</p>
+<p>Manuela “Ela” Taubert, nacida en 2000 en Bogotá, Colombia, creció rodeada de arte y música. Su carrera despegó durante la pandemia de 2020 compartiendo videos en TikTok, lo que llamó la atención de Universal Music, con quien firmó en 2021. En 2024 destacó en los Grammy Latinos junto a Joe Jonas interpretando “¿Cómo Pasó?” y ganó el premio a Mejor Nueva Artista. Ese mismo año fue reconocida en los Premios Juventud como parte de la Nueva Generación Femenina del pop latino.</p>
+  <!-- BLOQUE DE REDES SOCIALES -->
+    <div class="artist-socials">
+      <h3>Síguelos en:</h3>
+      <a href="https://www.instagram.com/accounts/login/?next=%2Felataubert%2F&source=omni_redirect" target="_blank">Instagram </a> |
+      <a href="https://x.com/elataubert" target="_blank">Twitter </a> |
+      <a href="https://www.youtube.com/@elataubert" target="_blank">YouTube </a>  |
+<a href= "https://www.tiktok.com/@elataubert"  target="_blank">tiktok</a>|
+      <a href="https://open.spotify.com/intl-es/artist/5xS8cfsAaFyy188dNJGDbM" target="_blank">Spotify 🎵</a>
+    </div>
+
+  </div>
+  <div class="artist-img">
+    <img src="https://image2url.com/r2/default/images/1773346894585-b8a88336-2f7d-43eb-b5b9-903a1cae9ebe.png" alt="Ela Taubert">
+  </div>
+</div>
+
+</body>
+</html>
